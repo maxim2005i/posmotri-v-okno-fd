@@ -54,6 +54,7 @@ input {
   width: 100%;
   cursor: pointer;
   object-fit: cover;
+  margin-top:9px;
 }
 
 .content {
@@ -91,7 +92,6 @@ input {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 0px;
   position: relative;
 }
 
