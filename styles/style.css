@@ -50,21 +50,17 @@ input {
   white-space: nowrap;
 }
 
-.result__video {
-  width: 100%;
-  cursor: pointer;
-  object-fit: cover;
-  margin-top:9px;
-}
+
+
 
 .content {
   display: grid;
   align-items: end;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.7fr 1fr;
   grid-template-areas: "result content__details";
   gap: 30px;
   width: 1140px;
-  margin-top: 0px;
+  column-gap: 30px;
 }
 
 .result {
@@ -85,18 +81,29 @@ input {
 .content__list {
   margin-top: 26px;
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
   position: relative;
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  min-width: 711px;
+  min-height: 386px;
   position: relative;
+  margin-top:9px;
+}
+
+.result__video {
+  width:100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  margin-top:9px;
 }
 
 .content__details {
   grid-area: content__details;
+  overflow: hidden;
+
 }
 
 .content__list-item:not(:last-child) {
@@ -105,7 +112,7 @@ input {
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
+  min-height: 103px;
   object-fit: cover;
 }
 
@@ -179,6 +186,7 @@ input {
 
 .more-button {
   width: 100%;
+  height:34px;
 }
 
 .button:focus {
@@ -223,7 +231,7 @@ input {
 .content__video-card-title {
   margin-bottom: 6px;
   font-family: "Fira Sans Condensed", sans-serif;
-  width: 200px;
+  max-width: 200px;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -255,7 +263,7 @@ input {
   align-items: start;
   width: 100%;
   height: 107px;
-  overflow: hidden;
+
 }
 
 .content__video-card-description {
