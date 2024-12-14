@@ -11,4 +11,4 @@
 
 
 
-https://github.com/maxim2005i/posmotri_v_okno
+https://github.com/maxim2005i/posmotri-v-okno-fd
