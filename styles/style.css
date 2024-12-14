@@ -16,7 +16,7 @@ html {
   block-size: 100%;
 }
 
-input {
+.search-form__textfield {
   font-family: "Fira Sans Condensed", sans-serif;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
@@ -50,9 +50,6 @@ input {
   white-space: nowrap;
 }
 
-
-
-
 .content {
   display: grid;
   align-items: end;
@@ -70,7 +67,6 @@ input {
 }
 
 .search-form {
-  width: 711px;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -88,23 +84,19 @@ input {
   min-width: 711px;
   height: 386px;
   position: relative;
-  
-
 }
 
 .result__video {
-  width:100%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   object-fit: cover;
-
-  
+  object-position: center;
 }
 
 .content__details {
   grid-area: content__details;
   overflow: hidden;
-
 }
 
 .content__list-item:not(:last-child) {
@@ -115,6 +107,7 @@ input {
   width: 194px;
   min-height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form__checkbox-list {
@@ -140,21 +133,20 @@ input {
   width: 15px;
   height: 15px;
   z-index: 1;
-
 }
 
 .search-form__label {
   display: flex;
   width: fit-content;
   cursor: pointer;
+  align-items: center;
 }
 
-.search-form__label-text:hover {
+.search-form__label > .search-form__label-text:hover {
   text-decoration: underline;
 }
 
 .search-form__textfield {
-  padding-top: 5px;
   min-width: 225px;
   appearance: none;
   cursor: pointer;
@@ -173,6 +165,7 @@ input {
   border: 1px solid #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
+  height: 34px;
   font-size: 18px;
   text-align: center;
   background-color: transparent;
@@ -182,12 +175,10 @@ input {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   width: 100%;
-  height:34px;
 }
 
 .button:focus {
@@ -215,9 +206,13 @@ input {
   background-color: #545050;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
   color: white;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -231,7 +226,7 @@ input {
 
 .content__video-card-title {
   margin-bottom: 6px;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Oswald', sans-serif;
   max-width: 200px;
   font-weight: 700;
   font-size: 30px;
@@ -263,12 +258,10 @@ input {
   display: flex;
   align-items: start;
   width: 100%;
-  height: 107px;
-
 }
 
 .content__video-card-description {
-  font-family: "", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -284,11 +277,6 @@ input {
 }
 
 .content__accent {
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 94%;
-  text-transform: uppercase;
   color: #545050;
 }
 
