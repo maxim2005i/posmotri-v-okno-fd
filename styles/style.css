@@ -67,7 +67,6 @@ input {
   grid-area: result;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .search-form {
@@ -75,7 +74,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .content__list {
@@ -87,9 +86,10 @@ input {
 
 .result__video-container {
   min-width: 711px;
-  min-height: 386px;
+  height: 386px;
   position: relative;
-  margin-top:9px;
+  
+
 }
 
 .result__video {
@@ -97,7 +97,8 @@ input {
   height: 100%;
   cursor: pointer;
   object-fit: cover;
-  margin-top:9px;
+
+  
 }
 
 .content__details {
