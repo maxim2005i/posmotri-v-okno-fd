@@ -132,7 +132,7 @@ input {
   width: 15px;
   height: 15px;
   z-index: 1;
-  position: absolute;
+
 }
 
 .search-form__label {
